@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Резюме Алексей Примадонин</title>
-  </head>
-
-  <body>
-    <div id="header">
-      <h1>Алексей Примадонин</h1>
-      <h3>Веб-разработчик</h3>
-      <p>
-        <a href="mailto:ap@somemail.com">ap@somemail.com</a>,
-        <a href="https://github.com/alprima">github.com/alprima</a>
-      </p>
-    </div>
-
-    <div id="main">
-      <p>
-        Я увлекаюсь веб-дизайном со старших классов школы. Начал с мини-сайтов для себя и друзей, потом для местных фирм и организаций. После курсов на Хекслете начал работу веб-разработчиком. Пишу на JS (ES6), люблю функциональное программирование. Умею работать с SQL, HTTP, Git и Ansible. Пишу тесты.
-      </p>
-
-      <p>
-        Готов к удаленной работе и релокации.
-      </p>
-
-      <div class="main_section">
-        <h2>Опыт работы</h2>
-
-        <div class="main_section_item">
-          <h3>Майкрософт Россия</h3>
-          <p>Программист (стажировка), <i>апрель 2016 — ноябрь 2016</i></p>
-          <ul>
-            <li>Работа в команде на C#</li>
-            <li>Создание веб-сайта проекта JDX</li>
-          </ul>
-        </div>
-
-        <div class="main_section_item">
-          <h3>TOO «Винная Баня»</h3>
-          <p>Веб-дизайн, <i>январь 2015 — апрель 2016</i></p>
-          <ul>
-            <li>Верстка макетов</li>
-            <li>Разработка тем для Wordpress</li>
-            <li>Поддержка сайта</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="main_section">
-        <h2>Образование</h2>
-
-        <div class="main_section_item">
-          <h3>Университет им. Патриса Лумумбы</h3>
-          <p>Бакалавр информационных систем, <i>2012 —  2016</i></p>
-        </div>
-
-        <div class="main_section_item">
-          <h3>Хекслет</h3>
-          <p>Курсы по программированию, JS Backend/Frontend, <i>2015 — 2017</i></p>
-        </div>
-      </div>
-
-      <div class="main_section">
-        <h2>Другие навыки и увлечения</h2>
-
-        <div class="main_section_item">
-          <ul>
-            <li>Основы дизайна и типографики</li>
-            <li>Любительская игра на гитаре</li>
-            <li>Хоккей на траве (городская лига)</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="footer">
-      <strong>Алексей Примадонин</strong>
-      <br/>
-      ул. Полевая, 12, Астрахань, Россия +7 888 127 00 01, <a href="mailto:ap@somemail.com">ap@somemail.com</a>
-    </div>
-
-  </body>
+<head>
+	<title>Не забыть поменять</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="search">
+				<form action="#" method="GET">
+					<input type="text" name="search">
+					<input type="submit" name="go-search" value="GO">
+				</form>
+			</div>
+			<div class="logo">
+				<a href="#home">
+					<div class="square"></div>
+					<h1>Super logo</h1>	
+				</a>
+			</div>
+			<div class="main-menu">
+				<ul class="menu">
+					<li><a href="#home" id="home">Home</a></li>
+					<li><a href="#about" id="about">About us</a></li>
+					<li><a href="#service" id="service">Service</a></li>
+					<li><a href="#partners" id="partners">Partners</a></li>
+					<li><a href="#customers" id="customers">Customers</a></li>
+					<li><a href="#progect" id="progect">Progect</a></li>
+					<li><a href="#careers" id="careers">Careers</a></li>
+					<li><a href="#contact" id="contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="background-for-img-header">
+				<div class="img-header">
+					<h1>Aliquam pharetra <br> vulputate</h1>
+					<div class="info-for-img">
+						<p>Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst. </p>
+						<a href="#read-more">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topics clearfix">
+			<div class="topic">
+				<div class="topic-head purple">
+					<h2>About super logo</h2>
+				</div>
+				<a href="#home" class="img-topic dog"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+				<a href="#read-more" class="topic-read-more">Read more</a>
+			</div>
+			<div class="topic">
+				<div class="topic-head orange">
+					<h2>Some words our ceo</h2>
+				</div>
+				<a href="#home" class="img-topic stive"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+				<p>Steve Jobs, CEO</p>
+			</div>
+			<div class="topic">
+				<div class="topic-head orange">
+					<h2>About super logo</h2>
+				</div>
+				<a href="#home" class="img-topic eyes"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+				<a href="#read-more" class="topic-read-more">Read more</a>
+			</div>
+			<div class="topic">
+				<div class="topic-head purple">
+					<h2>Some words our ceo</h2>
+				</div>
+				<a href="#home" class="img-topic girl"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+				<p>Steve Jobs, CEO</p>
+			</div>
+			<div class="info-topic">
+				<div class="topic">
+					<div class="topic-head orange">
+						<h2>Services</h2>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+					<a href="#read-more" class="topic-read-more">Read more</a>
+				</div>
+				<div class="topic">
+					<div class="topic-head purple">
+						<h2>Resent post</h2>
+					</div>
+					<ul>
+						<li>
+							<a href="#" class="a1"></a>
+							<h4>Lorem ipsum</h4>
+							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</li>
+						<li>
+							<a href="#" class="a2"></a>
+							<h4>Lorem ipsum</h4>
+							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</li>
+						<li>
+							<a href="#" class="a3"></a>
+							<h4>Lorem ipsum</h4>
+							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="topic">
+					<div class="topic-head orange">
+						<h2>Services</h2>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+					<a href="#read-more" class="topic-read-more">Read more</a>
+				</div>
+			</div>
+			<div class="topic clents">
+					<div class="topic-head purple">
+						<h2>Clents</h2>
+					</div>
+						<a href="#" class="html5"></a>
+						<a href="#" class="css3"></a>
+						<a href="#" class="nodejs"></a>
+						<a href="#" class="php"></a>
+						<a href="#" class="mysql"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+			<h3>Copyright © Lodoss Team  2018</h3>
+	</div>
+</body>
 </html>
