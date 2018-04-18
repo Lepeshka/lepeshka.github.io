@@ -150,14 +150,15 @@ body {
 	margin: 0;
 	padding: 17px 0 27px 42px;
 	height: 287px;
+	
 }
 
 .header .img-header h1 {
 	font-size: 64px;
 	line-height: 75px;
-	font-weight: normal;
 	color: #FFC740;
 	margin: 0px;
+	font-weight: 400;
 }
 
 .header .img-header .info-for-img {
@@ -166,11 +167,11 @@ body {
 }
 
 .header .img-header .info-for-img p {
-    font-size: 14px;
-    font-weight: normal;
+	font-size: 14px;
     line-height: 16px;
     color: white;
-    margin: 10px 0 9px 0;
+	margin: 10px 0 9px 0;
+	font-weight: 300;
 }
 
 .header .img-header .info-for-img a {
@@ -180,7 +181,7 @@ body {
 	width: 125px;
 	height: 25px;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
 	text-transform: uppercase;
