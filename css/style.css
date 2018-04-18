@@ -166,7 +166,8 @@ body {
 }
 
 .header .img-header .info-for-img p {
-	font-size: 14px;
+    font-size: 14px;
+    font-weight: normal;
     line-height: 16px;
     color: white;
     margin: 10px 0 9px 0;
