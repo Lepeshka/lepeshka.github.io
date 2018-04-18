@@ -1,24 +1,131 @@
-body {
-	font-family: Roboto, Verdana, sans-serif;
-	border-top: 5px solid #9B51E0;
+*, *:after, *:before {
+	box-sizing: border-box;
 }
+
+body {
+	font: normal 100% Roboto, sans-serif;
+	margin: 0;
+}
+
+.content {
+	max-width: 984px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+
+.line {
+	height: 5px;
+}
+
+.line_bg_purple {
+	background: #9B51E0;
+}
+
+.nav {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: baseline;
+	padding: 16px 0;
+}
+
+.nav__link {
+	text-decoration: none;
+	width: 100%;
+	height: 47px;
+	text-align: center;
+	padding: 12px 0;
+	color: #050505;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+	color: #9B51E0;
+}
+
+.nav__link_active:hover {
+	color: white;
+}
+
+.nav__link_active {
+	background: #FFC740;
+	color: white;
+}
+
+.logo {
+	display: block;
+	position: relative;
+	flex-basis: 170px;
+}
+
+.logo__square {
+	border: 3px solid #FFC740;
+	height: 46px;
+	width: 46px;
+}
+
+.logo__title {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	background: white;
+}
+
+.search {
+	flex-basis: 200px;
+	height: 34px;
+	border: 1px solid #6D3D99;
+}
+
+.search__text {
+	margin: 0;
+	font-size: 14px;
+	height: 32px;
+	border: none;
+	width: 156px;
+	float: left;
+	color: #392050;
+}
+
+.search__submit {
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0;
+	width: 42px;
+	height: 32px;
+	background: #9B51E0;
+	border: none;
+	color: white;
+	border-left: 1px solid #6D3D99;
+}
+
+
+/*
 
 .wrapper {
 	width: 984px;
 	margin: 0 auto;
 }
- 
-/*
+
 	HEADER container
- */
 
 .header {
 	padding-top: 35px;
 }
 
-/*
 	Поиск
- */
 
 .header .search {
 	font-size: 0;
@@ -65,9 +172,7 @@ body {
 	border-left: 1px solid #6D3D99;
 }
 
-/*
 	Супер логотип сайта
- */
 
 .header .logo {
 	position: relative;
@@ -95,9 +200,7 @@ body {
 	background: white;
 }
 
-/*
 	Меню
- */
 
 .header .main-menu {
 	margin: 17px 0;
@@ -137,9 +240,7 @@ body {
 	outline: none;
 }
 
-/*
 	Картика + текст
- */
 
  .header .background-for-img-header {
 	background: black;
@@ -192,9 +293,7 @@ body {
 	text-decoration: underline;
 }
 
-/*
 	Контент
- */
 
 .topics {
 	margin: 33px 0 0 0;
@@ -401,7 +500,7 @@ body {
 	height: 70px;
 }
 
-/* Класс распорка */
+Класс распорка
 
 .clearfix::after {
 	content: "";
@@ -410,9 +509,7 @@ body {
 	height: 0;
 }
 
-/*
 	Футер
- */
 
 .footer {
 	height: 67px;
@@ -431,3 +528,5 @@ body {
 	margin: 0;
 	margin: 0 auto;
 }
+
+*/
