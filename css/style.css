@@ -1,29 +1,20 @@
 body {
-	font-family: Roboto, Verdana, sans-serif;
+	font-family: Roboto;
 	border-top: 5px solid #9B51E0;
 }
 
 .wrapper {
-	width: 984px;
+	max-width: 984px;
 	margin: 0 auto;
 }
- 
-/*
-	HEADER container
- */
 
 .header {
 	padding-top: 35px;
 }
 
-/*
-	Поиск
- */
-
 .header .search {
-	font-size: 0;
-	width: 200px;
-	height: 32px;
+	max-width: 200px;
+	height: 35px;
 	border: 1px solid #6D3D99;
 	float: right;
 }
@@ -31,11 +22,10 @@ body {
 .header .search input[type="text"] {
 	padding: 0 10px;
 	margin: 0;
-	font-size: 14px;
-	height: 32px;
+	font-size: 0.875em;
+	height: 33px;
 	border: none;
-	width: 140px;
-	float: left;
+	width: 80%;
 	color: #392050;
 }
 
@@ -54,20 +44,16 @@ body {
 }
 
 .header .search input[type="submit"] {
-	font-size: 14px;
-	line-height: 16px;
+	float: right;
+	font-size: 0.875em;
 	margin: 0;
-	width: 40px;
-	height: 32px;
+	width: 20%;
+	height: 33px;
 	background: #9B51E0;
 	border: none;
 	color: white;
 	border-left: 1px solid #6D3D99;
 }
-
-/*
-	Супер логотип сайта
- */
 
 .header .logo {
 	position: relative;
@@ -77,8 +63,8 @@ body {
 
 .header .logo .square {
 	border: 3px solid #FFC740;
-	height: 46px;
-	width: 46px;
+	height: 52px;
+	width: 52px;
 }
 
 .header .logo h1 {
@@ -95,18 +81,14 @@ body {
 	background: white;
 }
 
-/*
-	Меню
- */
-
 .header .main-menu {
 	margin: 17px 0;
 }
 
-.header .main-menu .menu {
+.header .main-menu {
 	padding: 0;
 	margin: 0;
-	height: 47px;
+	
 	width: 100%;
 	font-size: 14px;
 	line-height: 16px;
@@ -115,42 +97,33 @@ body {
 	list-style: none;
 }
 
-.header .main-menu .menu a {
+.header .main-menu a {
 	text-align: center;
 	color: #050505;
 	text-decoration: none;
 	display: block;
 	width: 123px;
-	height: 31px;
+	height: 47px;
 	float: left;
 	padding-top: 16px;
 }
 
-.header .main-menu .menu a:hover {
+.header .main-menu a:hover {
 	color: #6D3D99;
 	text-decoration: underline; 	
 }
 
-.header .main-menu .menu a.active-menu {
+.header .main-menu a.active-menu {
 	background: #FFC740;
 	color: white;
 	outline: none;
 }
 
-/*
-	Картика + текст
- */
-
- .header .background-for-img-header {
-	background: black;
-}
-
 .header .img-header {
-	background: url(../img/img-header-50.png);
+	background: url(../img/img-header.jpg);
 	margin: 0;
 	padding: 17px 0 27px 42px;
 	height: 287px;
-	
 }
 
 .header .img-header h1 {
@@ -193,10 +166,6 @@ body {
 .header .img-header .info-for-img a:hover {
 	text-decoration: underline;
 }
-
-/*
-	Контент
- */
 
 .topics {
 	margin: 33px 0 0 0;
@@ -402,19 +371,6 @@ body {
 	width: 138px;
 	height: 70px;
 }
-
-/* Класс распорка */
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-	height: 0;
-}
-
-/*
-	Футер
- */
 
 .footer {
 	height: 67px;
