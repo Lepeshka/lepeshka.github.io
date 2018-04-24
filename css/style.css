@@ -1,87 +1,76 @@
 body {
-	font-family: Roboto, Verdana, sans-serif;
+	font-family: Roboto;
 	border-top: 5px solid #9B51E0;
 }
 
 .wrapper {
-	width: 984px;
-	margin: 0 auto;
+	max-width: 984px;
 }
- 
-/*
-	HEADER container
- */
 
 .header {
 	padding-top: 35px;
 }
 
-/*
-	Поиск
- */
-
-.header .search {
-	font-size: 0;
-	width: 200px;
-	height: 32px;
+.search {
+	max-width: 200px;
+	height: 35px;
 	border: 1px solid #6D3D99;
 	float: right;
 }
 
-.header .search input[type="text"] {
+.search input[type="text"] {
 	padding: 0 10px;
 	margin: 0;
-	font-size: 14px;
-	height: 32px;
+	font-size: 0.875em;
+	height: 33px;
 	border: none;
-	width: 140px;
-	float: left;
+	width: 80%;
 	color: #392050;
 }
 
-.header .search input[type="text"]:focus {
+.search input[type="text"]:focus {
 	outline: none;
 }
 
-.header .search input[type="submit"]:focus {
+.search input[type="submit"]:focus {
 	outline: none;
 }
 
-.header .search input[type="submit"]:hover {
+.search input[type="submit"]:hover {
 	background: #FFC740;
 	cursor: pointer;
 	color: black;
 }
 
-.header .search input[type="submit"] {
-	font-size: 14px;
-	line-height: 16px;
+.search input[type="submit"] {
+	float: right;
+	font-size: 0.875em;
 	margin: 0;
-	width: 40px;
-	height: 32px;
+	width: 20%;
+	height: 33px;
 	background: #9B51E0;
 	border: none;
 	color: white;
 	border-left: 1px solid #6D3D99;
 }
 
-/*
-	Супер логотип сайта
- */
-
-.header .logo {
+.logo {
 	position: relative;
 	width: 170px;
 	margin-top: -7px;
 }
 
-.header .logo .square {
-	border: 3px solid #FFC740;
-	height: 46px;
-	width: 46px;
+.logo-sm {
+	display: none;
 }
 
-.header .logo h1 {
+.logo .square {
+	border: 3px solid #FFC740;
+	height: 52px;
+	width: 52px;
+}
+
+.logo h1 {
 	color: #000;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -95,65 +84,47 @@ body {
 	background: white;
 }
 
-/*
-	Меню
- */
-
-.header .main-menu {
+.navbar {
+	padding: 0;
 	margin: 17px 0;
 }
 
-.header .main-menu .menu {
-	padding: 0;
-	margin: 0;
-	height: 47px;
-	width: 100%;
-	font-size: 14px;
-	line-height: 16px;
-	text-transform: uppercase;
-	font-weight: 500;
-	list-style: none;
-}
-
-.header .main-menu .menu a {
+.navbar-nav a.nav-link {
 	text-align: center;
-	color: #050505;
 	text-decoration: none;
-	display: block;
-	width: 123px;
-	height: 31px;
-	float: left;
-	padding-top: 16px;
+	color: #050505;
+	text-transform: uppercase;
+	font-size: 0.875em;
 }
 
-.header .main-menu .menu a:hover {
-	color: #6D3D99;
+.navbar ul {
+	width: 100%;
+}
+
+.navbar li {
+	width: 100%;
+	height: 47px;
+	padding-top: 4px;
+}
+
+.navbar li.active {
+	background: #FFC740;
+	color: white;
+}
+
+.navbar a:hover {
 	text-decoration: underline; 	
 }
 
-.header .main-menu .menu a.active-menu {
-	background: #FFC740;
-	color: white;
-	outline: none;
-}
-
-/*
-	Картика + текст
- */
-
- .header .background-for-img-header {
-	background: black;
-}
-
-.header .img-header {
-	background: url(../img/img-header-50.png);
+.board {
+	width: 100%;
+	background: url(../img/img-header.jpg);
 	margin: 0;
 	padding: 17px 0 27px 42px;
-	height: 287px;
-	
+	height: 331px;
 }
 
-.header .img-header h1 {
+.board h1 {
 	font-size: 64px;
 	line-height: 75px;
 	color: #FFC740;
@@ -161,12 +132,12 @@ body {
 	font-weight: 400;
 }
 
-.header .img-header .info-for-img {
+.board .info-for-img {
 	width: 451px;
 	height: 133px;
 }
 
-.header .img-header .info-for-img p {
+.board .info-for-img p {
 	font-size: 14px;
     line-height: 16px;
     color: white;
@@ -174,12 +145,12 @@ body {
 	font-weight: 300;
 }
 
-.header .img-header .info-for-img a {
+.board .info-for-img a {
 	color: white;
 	display: block;
 	background: #6D3D99;
 	width: 125px;
-	height: 25px;
+	height: 36px;
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 14px;
@@ -190,68 +161,96 @@ body {
 	border: 1px solid #6D3D99;
 }
 
-.header .img-header .info-for-img a:hover {
+.board .info-for-img a:hover {
 	text-decoration: underline;
 }
 
-/*
-	Контент
- */
-
 .topics {
-	margin: 33px 0 0 0;
-	padding: 0 21px;
+	overflow: hidden;
+	margin: 0 20px 0;
 }
 
 .topics .topic {
-	width: 460px;
-	height: 170px;
-	float: left;
-	margin-bottom: 35px;
-	margin-right: 22px;
-	
+	padding: 34px 0 0 0;
+}
+
+@media (max-width: 767px) {
+	.header .main-menu {
+		flex-direction: column;
+	}
+
+	.header .main-menu a {
+		min-width: 100%;
+	}
+
+	.logo-sm {
+		display: block;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.logo h1 {
+		top: 18px;
+	}
+
+	.navbar {
+		margin-top: 30px;
+	}
+
+	.board {
+		background: url(../img/img-header-767.jpg);
+		height: 285px;
+		padding: 10px 0 20px 35px;
+	}
+
+	.board h1 {
+		font-size: 3em;
+		line-height: 60px;
+		color: #FFC740;
+		margin: 0px;
+		font-weight: 400;
+	}
+
+	.topics .topic {
+		padding: 17px 0 0 0;
+	}
 }
 
 .topics .topic p {
 	vertical-align: top;
-	margin: 0 0 13px 0;
+	margin: 0;
 	font-size: 12px;
 	line-height: 14px;
 	float: right;
-	width: 300px;
 	text-align: justify;
 }
 
 .topics > .topic:nth-child(even) {
-	margin-right: 0px;
+	padding-left: 10px;
+}
+.topics > .topic:nth-child(odd) {
+	padding-right: 10px;
 }
 
-.topics .topic a.img-topic {
-	float: left;
-	width: 134px;
-	height: 133px;
-	padding: 2px;
+.topic .img-topic {
 	border: 2px solid #FFC740;
+	width: 30.3243478260869565217391304348%;
+	padding: 1px;
+	float: left;
 	margin-right: 18px;
+	margin-bottom: 0px;
 }
 
-.topics .topic a.dog {
-	background: url(../img/dog.png) no-repeat 2px;
-}
-
-.topics .topic a.stive {
-	background: url(../img/stive.png) no-repeat 2px;
-} 
-
-.topics .topic a.girl {
-	background: url(../img/girl.png) no-repeat 2px;
-}
-
-.topics .topic a.eyes {
-	background: url(../img/eyes.png) no-repeat 2px;
+@media (min-width: 907px) {
+	.topic .img-topic {
+		margin-bottom: 20px;
+	}
 }
 
 .topics .topic a.topic-read-more {
+	text-decoration: underline;
 	color: black;
 	line-height: 14px;
 	font-size: 12px;
@@ -292,136 +291,187 @@ body {
 	top: 0px;
 }
 
-.topics .info-topic .topic {
-	width: 304px;
-	height: 178px;
-	margin-right: 0px;
+.topics .topic:nth-child(3n+2) {
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
-.topics .info-topic .topic:nth-child(3n+2) {
-	margin: 0 15px;
+.topics .topic:nth-child(3n) {
+	padding-right: 8px;
 }
 
-.topics .info-topic .topic p {
+.topics .topic:nth-child(3n+1) {
+	padding-left: 8px;
+}
+
+@media (max-width: 986px) {
+	.topics .topic {
+		padding-top: 8px;
+	}
+}
+
+
+
+.topics .topic p {
 	margin-bottom: 19px;
 	float: none;
 }
 
-.topics .info-topic .topic ul {
+.topics .topic ul {
 	margin: 0;
 	padding: 0;
 }
 
-.topics .info-topic .topic li {
+.topics .topic li {
+	display: inline-block;
 	list-style: none;
 	font-size: 12px;
 	line-height: 14px;
 	margin-bottom: 7px;
 }
 
-.topics .info-topic .topic li a {
+.topics .topic li a {
 	display: block;
 	float: left;
 	width: 38px;
 	height: 38px;
-	margin: 6px 11px 0 2px;
+	margin: 6px 11px 5px 2px;
 	border: 1px solid rgb(207, 207, 207);
 }
 
-.topics .info-topic .topic li a.a1 {
+.topics .topic li a.a1 {
 	background: url(../img/1.png);
 }
 
-.topics .info-topic .topic li a.a2 {
+.topics .topic li a.a2 {
 	background: url(../img/2.png);
 }
 
-.topics .info-topic .topic li a.a3 {
+.topics .topic li a.a3 {
 	background: url(../img/3.png);
 }
 
-.topics .info-topic .topic li h4 {
+.topics .topic li h4 {
 	margin: 0 0 2px 0;
 	font-weight: normal;
 	text-transform: uppercase;
+	font-size: 1em;
 }
 
-.topics .info-topic .topic li p {
-	margin: 0 0 0 40px;
-	width: 264px;
+.topics .topic li p {
+	margin: 0 0 0 14.925373134328358208955223880597%;
+	width: 86.533101045296167247386759581882%;
 	height: 29px;
+	text-align: justify;
+}
+
+@media (max-width: 680px) {
+	.topics .topic li a {
+		margin-bottom: 50px;
+	}
 }
 
 .topics .clents {
 	width: 100%;
 	padding: 0;
-	text-align: center;
+	padding-left: 0;
 	margin-bottom: 0;
+	margin-top: 35px;
 }
 
-.topics .clents .topic-head {
-	margin: 0;
+.topics .clents img {
+	width: 100%;
 }
 
 .topics .clents a {
-	vertical-align: middle;
-	color: white;
-	margin: 0;
-	padding: 0;
-	display: inline-block;	
-	margin: 30px 20px;
+	margin: 23px 0;
 }
-
-.topics .clents a.html5 {
-	background: url(../img/html5.png);
-	width: 93px;
-	height: 96px;
-}
-
-.topics .clents a.css3 {
-	background: url(../img/css3.png);
-	width: 96px;
-	height: 96px;
-}
-
-.topics .clents a.nodejs {
-	background: url(../img/nodejs.png);
-	width: 207px;
-	height: 77px;
-	
-}
-
-.topics .clents a.php {
-	background: url(../img/php.png);
-	width: 160px;
-	height: 86px;
-}
-
-.topics .clents a.mysql {
-	background: url(../img/mysql.png);
-	width: 138px;
-	height: 70px;
-}
-
-/* Класс распорка */
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-	height: 0;
-}
-
-/*
-	Футер
- */
 
 .footer {
-	height: 67px;
+	height: 115px;
 	width: 100%;
 	background: #6D3D99;
 	padding-top: 48px;
 }
+
+.footer h3 {
+	font-weight: bold;
+	line-height: 1em;
+	font-size: 0.875em;
+	text-align: center;
+	color: #fff;
+}
+
+.topics > section:last-of-type{
+	padding-right: 0px !important;
+}
+
+@media (max-width: 576px) {
+	.topics {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.board .info-for-img {
+		width: 80%;
+	}
+
+	.topics > .topic:nth-child(even) {
+		padding-left: 0;
+	}
+
+	.topics .topic:nth-child(3n) {
+		padding-right: 0;
+	}
+
+	.topics .topic:nth-child(3n+1) {
+		padding-left: 0;
+	}
+
+	.topics > .topic:nth-child(odd) {
+		padding-right: 0;
+	}
+
+	.topics .topic li p {
+		margin-left: 0;
+	}
+
+	.topics .clents {
+		margin-top: 15px;
+	}
+
+	.topics .topic:nth-child(3n+2) {
+		padding-right: 0;
+	}
+
+	.topics .topic li p {
+		width: 100%;
+	}
+	
+	.topics .topic li a{
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-width: 465px) {
+	.board {
+		padding: 20px;
+	}
+
+	.board h1 {
+		font-size: 30px;
+		line-height: 35px
+	}
+}
+
+@media (max-width: 400px)  {
+	.board .info-for-img {
+		width: 100%
+	}
+
+	.board .info-for-img p {
+		font-size: 12px;
+	}
 
 .footer h3 {
 	width: 984px;
@@ -431,4 +481,5 @@ body {
 	text-align: center;
 	color: #fff;
 	margin: 0 auto;
+
 }
