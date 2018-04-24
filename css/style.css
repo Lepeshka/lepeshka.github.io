@@ -407,6 +407,15 @@ body {
 }
 
 @media (max-width: 576px) {
+	.topics {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.board .info-for-img {
+		width: 80%;
+	}
+
 	.topics > .topic:nth-child(even) {
 		padding-left: 0;
 	}
@@ -437,5 +446,30 @@ body {
 
 	.topics .topic li p {
 		width: 100%;
+	}
+	
+	.topics .topic li a{
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-width: 465px) {
+	.board {
+		padding: 20px;
+	}
+
+	.board h1 {
+		font-size: 30px;
+		line-height: 35px
+	}
+}
+
+@media (max-width: 400px)  {
+	.board .info-for-img {
+		width: 100%
+	}
+
+	.board .info-for-img p {
+		font-size: 12px;
 	}
 }
