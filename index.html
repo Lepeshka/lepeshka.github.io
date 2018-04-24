@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<meta charset="utf-8">
-	<!-- Задание 4.1 -->
+	<!-- Задание 4.2 -->
 </head>
 <body>
 		<div class="line line_bg_purple"></div>
 		<div class="content">
-			<header class="header">
+			<header class="header content__header">
 				<a href="#" class="logo logo_float-left">
 					<div class="logo__square"></div>
 					<h1 class="logo__title">Super Logo</h1>
@@ -21,7 +21,7 @@
 						<input type="submit" class="search__submit" value ="GO">
 				</form>
 			</header>
-			<nav class="nav">
+			<nav class="nav content_nav">
 				<a href="#" class="nav__link nav__link_active">HOME</a>
 				<a href="#" class="nav__link">ABOUT AS</a>
 				<a href="#" class="nav__link">SERVICE</a>
@@ -32,98 +32,93 @@
 				<a href="#" class="nav__link">CONTACT</a>
 			</nav>
 			<main class="main">
-
+				<div class="img-board main__img-board">
+					<h1 class="img-board__h1">
+						Aliquam pharetra <br> vulputate
+					</h1>
+					<p class="img-board__p">
+						Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.
+					</p>
+					<a href="#" class="img-board__a">READ MORE</a>
+				</div>
+				<article class="topicks">
+					<div class="row1 topicks__row1">
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
+							<a href="#home" class="post__link post__link_img_dog"></a>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							<a href="#read-more" class="post__read-more">Read more</a>
+							</p>
+						</section>
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
+							<a href="#home" class="post__link post__link_img_stive"></a>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							Steve Jobs, CEO</p>
+						</section>
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
+							<a href="#home" class="post__link post__link_img_eyes"></a>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							<a href="#read-more" class="post__read-more">Read more</a>
+							</p>
+						</section>
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
+							<a href="#home" class="post__link post__link_img_girl"></a>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							Steve Jobs, CEO</p>
+						</section>
+					</div>
+					<div class="row2 topicks__row2">
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							<a href="#read-more" class="post__read-more">Read more</a>
+							</p>
+						</section>
+						<section class="post">
+							<div class="topic-head purple">
+								<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">RESENT POST</span></h1>
+							</div>
+							<ul class="post__resent-post">
+								<li class="post__posts">
+									<a href="#" class="post__small-link post__small-link_img_a1"></a>
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+								</li>
+								<li class="post__posts">
+									<a href="#" class="post__small-link post__small-link_img_a2"></a>
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+								</li>
+								<li class="post__posts">
+									<a href="#" class="post__small-link post__small-link_img_a3"></a>
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+								</li>
+							</ul>
+						</section>
+						<section class="post">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
+							<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat<br><br>
+							<a href="#read-more" class="post__read-more">Read more</a>
+							</p>
+						</section>
+					</div>
+					<section class="post topicks__post">
+						<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">CLENTS</span></h1>
+						<a href="#" class="post__html5"></a>
+						<a href="#" class="post__css3"></a>
+						<a href="#" class="post__nodejs"></a>
+						<a href="#" class="post__php"></a>
+						<a href="#" class="post__mysql"></a>
+					</section>
+				</article>
 			</main>
 		</div>
 		<footer class="footer">
-
-		</footer>
-<!--	<div class="topics clearfix">
-			<div class="topic">
-				<div class="topic-head purple">
-					<h2>About super logo</h2>
-				</div>
-				<a href="#home" class="img-topic dog"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-				<a href="#read-more" class="topic-read-more">Read more</a>
-			</div>
-			<div class="topic">
-				<div class="topic-head orange">
-					<h2>Some words our ceo</h2>
-				</div>
-				<a href="#home" class="img-topic stive"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-				<p>Steve Jobs, CEO</p>
-			</div>
-			<div class="topic">
-				<div class="topic-head orange">
-					<h2>About super logo</h2>
-				</div>
-				<a href="#home" class="img-topic eyes"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-				<a href="#read-more" class="topic-read-more">Read more</a>
-			</div>
-			<div class="topic">
-				<div class="topic-head purple">
-					<h2>Some words our ceo</h2>
-				</div>
-				<a href="#home" class="img-topic girl"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-				<p>Steve Jobs, CEO</p>
-			</div>
-			<div class="info-topic">
-				<div class="topic">
-					<div class="topic-head orange">
-						<h2>Services</h2>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-					<a href="#read-more" class="topic-read-more">Read more</a>
-				</div>
-				<div class="topic">
-					<div class="topic-head purple">
-						<h2>Resent post</h2>
-					</div>
-					<ul>
-						<li>
-							<a href="#" class="a1"></a>
-							<h4>Lorem ipsum</h4>
-							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-						</li>
-						<li>
-							<a href="#" class="a2"></a>
-							<h4>Lorem ipsum</h4>
-							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-						</li>
-						<li>
-							<a href="#" class="a3"></a>
-							<h4>Lorem ipsum</h4>
-							<p>Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-						</li>
-					</ul>
-				</div>
-				<div class="topic">
-					<div class="topic-head orange">
-						<h2>Services</h2>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
-					<a href="#read-more" class="topic-read-more">Read more</a>
-				</div>
-			</div>
-			<div class="topic clents">
-					<div class="topic-head purple">
-						<h2>Clents</h2>
-					</div>
-						<a href="#" class="html5"></a>
-						<a href="#" class="css3"></a>
-						<a href="#" class="nodejs"></a>
-						<a href="#" class="php"></a>
-						<a href="#" class="mysql"></a>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
 			<h3>Copyright © Lodoss Team  2018</h3>
-	</div>
--->
+		</footer>
 </body>
 </html>
