@@ -122,7 +122,6 @@ body {
 	margin: 0;
 	padding: 17px 0 27px 42px;
 	height: 331px;
-	border: 1px solid green;
 }
 
 .board h1 {
@@ -368,10 +367,18 @@ body {
 
 .topics .clents {
 	width: 100%;
+	padding: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 35px;
 }
 
-.topics .clents .topic-head {
-	margin: 0;
+.topics .clents img {
+	width: 100%;
+}
+
+.topics .clents a {
+	margin: 23px 0;
 }
 
 .footer {
@@ -389,22 +396,36 @@ body {
 	color: #fff;
 }
 
-.clents {
-	padding: 0;
-}
-
-.clents a {
-	margin: 29px 0;
-	width: 20%;
-	border: 1px solid red;
-}
-
-.clents {
-	width: 100%;
-}
-
 @media (max-width: 576px) {
-	.topics .topic {
-		padding: 0;
+	.topics > .topic:nth-child(even) {
+		padding-left: 0;
+	}
+
+	.topics .topic:nth-child(3n) {
+		padding-right: 0;
+	}
+
+	.topics .topic:nth-child(3n+1) {
+		padding-left: 0;
+	}
+
+	.topics > .topic:nth-child(odd) {
+		padding-right: 0;
+	}
+
+	.topics .topic li p {
+		margin-left: 0;
+	}
+
+	.topics .clents {
+		margin-top: 15px;
+	}
+
+	.topics .topic:nth-child(3n+2) {
+		padding-right: 0;
+	}
+
+	.topics .topic li p {
+		width: 100%;
 	}
 }
