@@ -175,6 +175,12 @@ body {
 }
 
 @media (max-width: 767px) {
+
+	.topics {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
 	.header .main-menu {
 		flex-direction: column;
 	}
@@ -223,15 +229,7 @@ body {
 	margin: 0;
 	font-size: 12px;
 	line-height: 14px;
-	float: right;
 	text-align: justify;
-}
-
-.topics > .topic:nth-child(even) {
-	padding-left: 10px;
-}
-.topics > .topic:nth-child(odd) {
-	padding-right: 10px;
 }
 
 .topic .img-topic {
@@ -291,30 +289,10 @@ body {
 	top: 0px;
 }
 
-.topics .topic:nth-child(3n+2) {
-	padding-left: 4px;
-	padding-right: 4px;
-}
-
-.topics .topic:nth-child(3n) {
-	padding-right: 8px;
-}
-
-.topics .topic:nth-child(3n+1) {
-	padding-left: 8px;
-}
-
 @media (max-width: 986px) {
 	.topics .topic {
 		padding-top: 8px;
 	}
-}
-
-
-
-.topics .topic p {
-	margin-bottom: 19px;
-	float: none;
 }
 
 .topics .topic ul {
@@ -323,7 +301,6 @@ body {
 }
 
 .topics .topic li {
-	display: inline-block;
 	list-style: none;
 	font-size: 12px;
 	line-height: 14px;
@@ -359,16 +336,7 @@ body {
 }
 
 .topics .topic li p {
-	margin: 0 0 0 14.925373134328358208955223880597%;
-	width: 86.533101045296167247386759581882%;
-	height: 29px;
 	text-align: justify;
-}
-
-@media (max-width: 680px) {
-	.topics .topic li a {
-		margin-bottom: 50px;
-	}
 }
 
 .topics .clents {
@@ -402,34 +370,43 @@ body {
 	color: #fff;
 }
 
-.topics > section:last-of-type{
-	padding-right: 0px !important;
+.col-sm-4:nth-child(even) {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.col-sm-4:nth-child(3n+5) {
+	padding-right: 8px;
+}
+
+.col-sm-4:nth-child(3n+7) {
+	padding-left: 8px;
+}
+
+.col-sm-6:nth-child(odd) {
+	padding-right: 11px;
+}
+
+.col-sm-6:nth-child(even) {
+	padding-left: 11px;
 }
 
 @media (max-width: 576px) {
-	.topics {
-		margin-left: 0;
-		margin-right: 0;
+
+	.navbar-nav a.nav-link {
+		font-size: 0.8em
+	}
+
+	.navbar li {
+		height: 43px;
+	}
+
+	.topics section.topic {
+		padding: 8px 0 0 0;
 	}
 
 	.board .info-for-img {
 		width: 80%;
-	}
-
-	.topics > .topic:nth-child(even) {
-		padding-left: 0;
-	}
-
-	.topics .topic:nth-child(3n) {
-		padding-right: 0;
-	}
-
-	.topics .topic:nth-child(3n+1) {
-		padding-left: 0;
-	}
-
-	.topics > .topic:nth-child(odd) {
-		padding-right: 0;
 	}
 
 	.topics .topic li p {
@@ -438,10 +415,6 @@ body {
 
 	.topics .clents {
 		margin-top: 15px;
-	}
-
-	.topics .topic:nth-child(3n+2) {
-		padding-right: 0;
 	}
 
 	.topics .topic li p {
