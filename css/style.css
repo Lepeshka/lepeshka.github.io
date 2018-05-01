@@ -3,6 +3,10 @@ body {
 	border-top: 5px solid #9B51E0;
 }
 
+.row {
+	margin: 0;
+}
+
 .wrapper {
 	max-width: 984px;
 }
@@ -125,8 +129,8 @@ body {
 }
 
 .board h1 {
-	font-size: 64px;
-	line-height: 75px;
+	font-size: 4em;
+	line-height: 1,171875em;
 	color: #FFC740;
 	margin: 0px;
 	font-weight: 400;
@@ -167,93 +171,46 @@ body {
 
 .topics {
 	overflow: hidden;
-	margin: 0 20px 0;
+	margin: 15px 20px 0;
 }
 
 .topics .topic {
-	padding: 34px 0 0 0;
-}
-
-@media (max-width: 767px) {
-
-	.topics {
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-
-	.header .main-menu {
-		flex-direction: column;
-	}
-
-	.header .main-menu a {
-		min-width: 100%;
-	}
-
-	.logo-sm {
-		display: block;
-	}
-
-	.header {
-		display: none;
-	}
-
-	.logo h1 {
-		top: 18px;
-	}
-
-	.navbar {
-		margin-top: 30px;
-	}
-
-	.board {
-		background: url(../img/img-header-767.jpg);
-		height: 285px;
-		padding: 10px 0 20px 35px;
-	}
-
-	.board h1 {
-		font-size: 3em;
-		line-height: 60px;
-		color: #FFC740;
-		margin: 0px;
-		font-weight: 400;
-	}
-
-	.topics .topic {
-		padding: 17px 0 0 0;
-	}
+	margin-top: 20px;
 }
 
 .topics .topic p {
-	vertical-align: top;
-	margin: 0;
 	font-size: 12px;
 	line-height: 14px;
 	text-align: justify;
+	margin-bottom: 0;
+}
+
+.topic .flex-column {
+	flex-basis:65.6756521739130434782608695652%;
+}
+
+.topic .justify-content-between a {
+	flex-basis: 30%;
 }
 
 .topic .img-topic {
 	border: 2px solid #FFC740;
-	width: 30.3243478260869565217391304348%;
+	width: 100%;
 	padding: 1px;
-	float: left;
-	margin-right: 18px;
-	margin-bottom: 0px;
-}
-
-@media (min-width: 907px) {
-	.topic .img-topic {
-		margin-bottom: 20px;
-	}
 }
 
 .topics .topic a.topic-read-more {
+	display: block;
 	text-decoration: underline;
 	color: black;
 	line-height: 14px;
 	font-size: 12px;
 	color: black;
-	margin-left: 0px;
+	margin-top: 15px;
+}
+
+.topic-author {
+	margin-top: 15px;
 }
 
 .topics .topic a.topic-read-more:hover {
@@ -289,47 +246,23 @@ body {
 	top: 0px;
 }
 
-@media (max-width: 986px) {
-	.topics .topic {
-		padding-top: 8px;
-	}
-}
-
-.topics .topic ul {
-	margin: 0;
-	padding: 0;
-}
-
-.topics .topic li {
+.topics .topic div {
 	list-style: none;
 	font-size: 12px;
 	line-height: 14px;
 	margin-bottom: 7px;
 }
 
-.topics .topic li a {
+.topics .col-sm-4 .flex-row a {
 	display: block;
-	float: left;
-	width: 38px;
-	height: 38px;
-	margin: 6px 11px 5px 2px;
+	width: 40px;
+	height: 40px;
 	border: 1px solid rgb(207, 207, 207);
+	margin-right: 10px;
 }
 
-.topics .topic li a.a1 {
-	background: url(../img/1.png);
-}
-
-.topics .topic li a.a2 {
-	background: url(../img/2.png);
-}
-
-.topics .topic li a.a3 {
-	background: url(../img/3.png);
-}
-
-.topics .topic li h4 {
-	margin: 0 0 2px 0;
+.topics .topic h4 {
+	margin: 0;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -341,10 +274,7 @@ body {
 
 .topics .clents {
 	width: 100%;
-	padding: 0;
-	padding-left: 0;
-	margin-bottom: 0;
-	margin-top: 35px;
+	margin-top: 36px;
 }
 
 .topics .clents img {
@@ -357,7 +287,6 @@ body {
 
 .footer {
 	height: 115px;
-	width: 100%;
 	background: #6D3D99;
 	padding-top: 48px;
 }
@@ -391,7 +320,50 @@ body {
 	padding-left: 11px;
 }
 
+@media (max-width: 767px) {
+	.topics {
+		margin: 10px 5px 0 5px;
+	}
+
+	.topics .topic {
+		margin-top: 10px;
+	}
+
+	.logo-sm {
+		display: block;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.logo h1 {
+		top: 18px;
+	}
+
+	.navbar {
+		margin-top: 30px;
+	}
+
+	.board {
+		background: url(../img/img-header-767.jpg);
+		height: 285px;
+		padding: 10px 0 20px 35px;
+	}
+
+	.board h1 {
+		font-size: 3em;
+		line-height: 60px;
+		color: #FFC740;
+		margin: 0px;
+		font-weight: 400;
+	}
+}
+
 @media (max-width: 576px) {
+	section.col-sm-4 {
+		margin: 10px 0;
+	}
 
 	.navbar-nav a.nav-link {
 		font-size: 0.8em
@@ -402,57 +374,34 @@ body {
 	}
 
 	.topics section.topic {
-		padding: 8px 0 0 0;
+		padding: 0;
+	}
+
+	.board {
+		padding: 5px 20px;
 	}
 
 	.board .info-for-img {
-		width: 80%;
+		width: 100%;
 	}
 
-	.topics .topic li p {
-		margin-left: 0;
+	.board h1 {
+		font-size: 2.5em;
 	}
 
 	.topics .clents {
 		margin-top: 15px;
 	}
-
-	.topics .topic li p {
-		width: 100%;
-	}
-	
-	.topics .topic li a{
-		margin-bottom: 0px;
-	}
 }
 
-@media (max-width: 465px) {
-	.board {
-		padding: 20px;
-	}
-
+@media (max-width: 398px) {
 	.board h1 {
 		font-size: 30px;
-		line-height: 35px
-	}
-}
-
-@media (max-width: 400px)  {
-	.board .info-for-img {
-		width: 100%
+		line-height: 40px;
 	}
 
 	.board .info-for-img p {
 		font-size: 12px;
+    	line-height: 14px;
 	}
-
-.footer h3 {
-	width: 984px;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 16px;
-	text-align: center;
-	color: #fff;
-	margin: 0 auto;
-
 }
