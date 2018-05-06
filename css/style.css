@@ -9,6 +9,7 @@ body {
 
 .wrapper {
 	max-width: 984px;
+	min-height: calc(100vh - 115px);
 }
 
 .header {
@@ -120,12 +121,16 @@ body {
 	text-decoration: underline; 	
 }
 
+.board-bg {
+	background: url(../img/img-header.jpg) no-repeat 35% 80%;
+	background-size: cover;
+}
+
 .board {
+	background: rgba(0, 0, 0, 0.38);
 	width: 100%;
-	background: url(../img/img-header.jpg);
 	margin: 0;
-	padding: 17px 0 27px 42px;
-	height: 331px;
+	padding: 17px 0 20px 42px;
 }
 
 .board h1 {
@@ -306,18 +311,22 @@ body {
 
 .col-sm-4:nth-child(3n+5) {
 	padding-right: 8px;
+	padding-left: 0;
 }
 
 .col-sm-4:nth-child(3n+7) {
 	padding-left: 8px;
+	padding-right: 0;
 }
 
 .col-sm-6:nth-child(odd) {
 	padding-right: 11px;
+	padding-left: 0;
 }
 
 .col-sm-6:nth-child(even) {
 	padding-left: 11px;
+	padding-right: 0;
 }
 
 @media (max-width: 767px) {
@@ -346,13 +355,11 @@ body {
 	}
 
 	.board {
-		background: url(../img/img-header-767.jpg);
-		height: 285px;
 		padding: 10px 0 20px 35px;
 	}
 
 	.board h1 {
-		font-size: 3em;
+		font-size: 2.5em;
 		line-height: 60px;
 		color: #FFC740;
 		margin: 0px;
@@ -378,15 +385,12 @@ body {
 	}
 
 	.board {
-		padding: 5px 20px;
+		padding: 10px 25px;
 	}
 
 	.board .info-for-img {
 		width: 100%;
-	}
-
-	.board h1 {
-		font-size: 2.5em;
+		height: 100%;
 	}
 
 	.topics .clents {
@@ -396,12 +400,20 @@ body {
 
 @media (max-width: 398px) {
 	.board h1 {
-		font-size: 30px;
 		line-height: 40px;
 	}
 
-	.board .info-for-img p {
-		font-size: 12px;
-    	line-height: 14px;
+	.col-sm-6 .flex-row {
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+
+	.topic .flex-column {
+		flex-basis: 100%;
+		margin-top: 10px;
+	}
+
+	.topic .justify-content-between a {
+		flex-basis: auto;
 	}
 }
